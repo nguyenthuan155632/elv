@@ -1,0 +1,18 @@
+#del_colDi {
+	display: none;
+}
+
+#format-ad-frm-widget input, #format-ad-frm-widget textarea {
+	width: 100%;
+}
+
+.col_hidden {
+	display: none;
+}
+.wrap .error {
+	display: none;
+}
+
+#text-center-admin {
+	text-align: center;
+}

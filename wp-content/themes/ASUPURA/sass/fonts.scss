@@ -1,0 +1,23 @@
+$font-size: 15px;
+$font-family: arial;
+$font-weight: normal;
+$color: #4c4c4c;
+
+@font-face {
+    font-family: a1mincho;
+    src: url(a1mincho.otf);
+}
+@font-face {
+    font-family: freesans;
+    src: url(FreeSans.otf);
+}
+@font-face {
+    font-family: kozgo;
+    src: url(KozGoPr6N-Regular.otf);
+}
+@font-face {
+    font-family: udshin;
+    src: url(udshin.otf);
+}
+
+font-family: Noto Sans CJK JP, Meiryo, arial;
