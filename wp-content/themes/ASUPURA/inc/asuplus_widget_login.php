@@ -16,15 +16,15 @@ class ASUPlus_Widget_Login extends WP_Widget {
         $host_address = site_url();
         $default = array(
             'title1' => 'LOG IN',
-            'title2' => '会員ログイン',
-            'placeholder1' => 'ログインID',
-            'placeholder2' => 'パスワード',
-            'forgot' => 'パスワードをお忘れの方はこちら',
-            'login' => 'ログイン',
-            'sns' => 'SNSのIDでログイン',
-            'sns_a' => site_url().'/snslogin',
-            'registry1' => 'ログインIDをお持ちでない方はこちら',
-            'registry2' => '新規会員登録',
+            'title2' => ' Member Login',
+            'placeholder1' => 'User ID',
+            'placeholder2' => 'Password',
+            'forgot' => 'Forgot your password?',
+            'login' => 'Login',
+            // 'sns' => 'SNSのIDでログイン',
+            // 'sns_a' => site_url().'/snslogin',
+            'registry1' => 'Create an free account!',
+            'registry2' => 'Registry',
             'forgot_a' => 'https://asupura.com/members/users/set_pass',
         );
         $instance = wp_parse_args((array) $instance, $default);
@@ -34,8 +34,8 @@ class ASUPlus_Widget_Login extends WP_Widget {
         $placeholder2 = esc_attr( $instance['placeholder2'] );
         $forgot = esc_attr( $instance['forgot'] );
         $login = esc_attr( $instance['login'] );
-        $sns = esc_attr( $instance['sns'] );
-        $sns_a = esc_attr( $instance['sns_a'] );
+        // $sns = esc_attr( $instance['sns'] );
+        // $sns_a = esc_attr( $instance['sns_a'] );
         $registry1 = esc_attr( $instance['registry1'] );
         $registry2 = esc_attr( $instance['registry2'] );
         $forgot_a = esc_attr( $instance['forgot_a'] );
@@ -47,8 +47,8 @@ class ASUPlus_Widget_Login extends WP_Widget {
         echo '<input class="widefat" type="text" name="'.$this->get_field_name("forgot").'" value="'.$forgot.'" /><br/><br/>';
         echo '<input class="widefat" type="text" name="'.$this->get_field_name("forgot_a").'" value="'.$forgot_a.'" /><br/><br/>';
         echo '<input class="widefat" type="text" name="'.$this->get_field_name("login").'" value="'.$login.'" /><br/><br/>';
-        echo '<input class="widefat" type="text" name="'.$this->get_field_name("sns").'" value="'.$sns.'" /><br/><br/>';
-        echo '<input class="widefat" type="text" name="'.$this->get_field_name("sns_a").'" value="'.$sns_a.'" /><br/><br/>';
+        // echo '<input class="widefat" type="text" name="'.$this->get_field_name("sns").'" value="'.$sns.'" /><br/><br/>';
+        // echo '<input class="widefat" type="text" name="'.$this->get_field_name("sns_a").'" value="'.$sns_a.'" /><br/><br/>';
         echo '<input class="widefat" type="text" name="'.$this->get_field_name("registry1").'" value="'.$registry1.'" /><br/><br/>';
         echo '<input class="widefat" type="text" name="'.$this->get_field_name("registry2").'" value="'.$registry2.'" /><br/><br/>';
     }
@@ -64,8 +64,8 @@ class ASUPlus_Widget_Login extends WP_Widget {
         $instance['forgot'] = strip_tags($new_instance['forgot']);
         $instance['forgot_a'] = strip_tags($new_instance['forgot_a']);
         $instance['login'] = strip_tags($new_instance['login']);
-        $instance['sns'] = strip_tags($new_instance['sns']);
-        $instance['sns_a'] = strip_tags($new_instance['sns_a']);
+        // $instance['sns'] = strip_tags($new_instance['sns']);
+        // $instance['sns_a'] = strip_tags($new_instance['sns_a']);
         $instance['registry1'] = strip_tags($new_instance['registry1']);
         $instance['registry2'] = strip_tags($new_instance['registry2']);
         return $instance;
@@ -80,8 +80,8 @@ class ASUPlus_Widget_Login extends WP_Widget {
         $forgot = $instance['forgot'];
         $forgot_a = $instance['forgot_a'];
         $login = $instance['login'];
-        $sns = $instance['sns'];
-        $sns_a = $instance['sns_a'];
+        // $sns = $instance['sns'];
+        // $sns_a = $instance['sns_a'];
         $registry1 = $instance['registry1'];
         $registry2 = $instance['registry2'];
 
@@ -109,7 +109,7 @@ class ASUPlus_Widget_Login extends WP_Widget {
                     <div class="button-login-new">
                         <input id="button-login-new-login" type="submit" name="login-submit" value="<?php echo $login; ?>">
                     </div>
-                    <div class="button-login-new btn-sns-author">
+                    <!-- <div class="button-login-new btn-sns-author">
                         <a href="<?php echo API_URL;?>/twitter/authorize" title="">
                         <div class="btn-sns-twitter">
                         <span class="font-white-color">Twitterで<br>ログイン</span>
@@ -120,7 +120,7 @@ class ASUPlus_Widget_Login extends WP_Widget {
                             <span class="font-white-color">Facebookで<br>ログイン</span>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                     </form>
 
                     <hr/>

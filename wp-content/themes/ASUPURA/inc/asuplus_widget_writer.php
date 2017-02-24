@@ -16,8 +16,8 @@ class ASUPlus_Widget_Writer extends WP_Widget {
         $host_address = site_url();
         $default = array(
             'title' => 'WRITER',
-            'title_2' => 'ライター紹介',
-            'list' => 'ライター一覧を見る'
+            'title_2' => 'Administrator',
+            'list' => 'Administrator List'
         );
         $instance = wp_parse_args((array) $instance, $default);
         $title = esc_attr( $instance['title'] );

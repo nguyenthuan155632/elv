@@ -15,23 +15,23 @@ class ASUPlus_Widget_SNS extends WP_Widget {
     function form($instance) {
         $host_address = site_url();
         $default = array(
-            'title1' => 'FOLLOW US!!',
-            'title2' => 'アスプラをフォローして最新情報ゲット！',
+            'title1' => 'CONTACT US!!',
+            'title2' => 'Contact to EL-VOL',
             'facebook' => 'https://www.facebook.com/',
-            'twitter' => 'https://twitter.com/',
-            'google' => 'https://plus.google.com/',
+            // 'twitter' => 'https://twitter.com/',
+            'google' => 'tienelv@gmail.com',
         );
         $instance = wp_parse_args((array) $instance, $default);
         $title1 = esc_attr( $instance['title1'] );
         $title2 = esc_attr( $instance['title2'] );
         $facebook = esc_attr( $instance['facebook'] );
-        $twitter = esc_attr( $instance['twitter'] );
+        // $twitter = esc_attr( $instance['twitter'] );
         $google = esc_attr( $instance['google'] );
         
         echo '<br/><br/> <input class="widefat" type="text" name="'.$this->get_field_name("title1").'" value="'.$title1.'" /><br/><br/>';
         echo '<input class="widefat" type="text" name="'.$this->get_field_name("title2").'" value="'.$title2.'" /><br/><br/>';
         echo 'Follow Facebook:<br/><br/> <input class="widefat" type="text" name="'.$this->get_field_name("facebook").'" value="'.$facebook.'" /><br/><br/>';
-        echo 'Follow Twitter:<br/><br/> <input class="widefat" type="text" name="'.$this->get_field_name("twitter").'" value="'.$twitter.'" /><br/><br/>';
+        // echo 'Follow Twitter:<br/><br/> <input class="widefat" type="text" name="'.$this->get_field_name("twitter").'" value="'.$twitter.'" /><br/><br/>';
         echo 'Follow Google+:<br/><br/> <input class="widefat" type="text" name="'.$this->get_field_name("google").'" value="'.$google.'" /><br/><br/>';
     }
     
@@ -42,7 +42,7 @@ class ASUPlus_Widget_SNS extends WP_Widget {
         $instance['title1'] = strip_tags($new_instance['title1']);
         $instance['title2'] = strip_tags($new_instance['title2']);
         $instance['facebook'] = strip_tags($new_instance['facebook']);
-        $instance['twitter'] = strip_tags($new_instance['twitter']);
+        // $instance['twitter'] = strip_tags($new_instance['twitter']);
         $instance['google'] = strip_tags($new_instance['google']);
         return $instance;
     }
@@ -52,7 +52,7 @@ class ASUPlus_Widget_SNS extends WP_Widget {
         $title1 = $instance['title1'];
         $title2 = $instance['title2'];
         $facebook = $instance['facebook'];
-        $twitter = $instance['twitter'];
+        // $twitter = $instance['twitter'];
         $google = $instance['google'];
         
         ?>
@@ -63,8 +63,8 @@ class ASUPlus_Widget_SNS extends WP_Widget {
             <span id="note-follow"><?php echo $title2; ?></span>
             <ul id="icon-sns">
                 <li><a href="<?php echo $facebook; ?>" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/facebook_icon.png" alt=""></a></li>
-                <li><a href="<?php echo $twitter; ?>" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/twitter_icon.png" alt=""></a></li>
-                <li><a href="<?php echo $google; ?>" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/google_icon.png" alt=""></a></li>
+                <!-- <li><a href="<?php echo $twitter; ?>" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/twitter_icon.png" alt=""></a></li> -->
+                <li><a href="mailto: <?php echo $google; ?>"><img src="<?php bloginfo('template_directory'); ?>/images/google_icon.png" alt=""></a></li>
             </ul>
         </div>
 

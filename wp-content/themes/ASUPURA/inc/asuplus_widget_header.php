@@ -42,8 +42,8 @@ class ASUPlus_Widget_Header extends WP_Widget {
             'link_sp_03' => 'Pickup',
             // 'link_sp_04' => '注目記事ランキング',
             'link_sp_01_a' => $host_address.'/login',
-            'link_sp_02_a' => '#main-content',
-            'link_sp_03_a' => '#pickup-post',
+            'link_sp_02_a' => $host_address.'#main-content',
+            'link_sp_03_a' => $host_address.'#pickup-post',
             // 'link_sp_04_a' => '#',
             'link_sp_11' => 'Báo động - Báo cháy',
             'link_sp_12' => 'Camera quan sát',
@@ -707,10 +707,10 @@ class ASUPlus_Widget_Header extends WP_Widget {
 
                 <!-- mid -->
                 <div class="table-inline sp-menu-middle">
-                    <a href="<?php echo get_category_link(get_cat_ID('スキルアップ')); ?>" class="table-col-50 sp-tab-menu-middle sp-menu-border-left">
+                    <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>" class="table-col-50 sp-tab-menu-middle sp-menu-border-left">
                         <?php echo $link_sp_11; ?>
                     </a>
-                    <a href="<?php echo get_category_link(get_cat_ID('モチベーション')); ?>" class="table-col-50 sp-tab-menu-middle">
+                    <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>" class="table-col-50 sp-tab-menu-middle">
                         <?php echo $link_sp_15; ?>
                     </a>
                 </div>
@@ -718,10 +718,10 @@ class ASUPlus_Widget_Header extends WP_Widget {
 
                 <!-- mid -->
                 <div class="table-inline sp-menu-middle">
-                    <a href="<?php echo get_category_link(get_cat_ID('組織・チーム')); ?>" class="table-col-50 sp-tab-menu-middle sp-menu-border-left">
+                    <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>" class="table-col-50 sp-tab-menu-middle sp-menu-border-left">
                         <?php echo $link_sp_12; ?>
                     </a>
-                    <a href="<?php echo get_category_link(get_cat_ID('センパイ')); ?>" class="table-col-50 sp-tab-menu-middle">
+                    <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>" class="table-col-50 sp-tab-menu-middle">
                         <?php echo $link_sp_16; ?>
                     </a>
                 </div>
@@ -729,19 +729,8 @@ class ASUPlus_Widget_Header extends WP_Widget {
 
                 <!-- mid -->
                 <div class="table-inline sp-menu-middle">
-                    <a href="<?php echo get_category_link(get_cat_ID('仕事研究会')); ?>" class="table-col-50 sp-tab-menu-middle sp-menu-border-left">
+                    <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>" class="table-col-50 sp-tab-menu-middle sp-menu-border-left">
                         <?php echo $link_sp_13; ?>
-                    </a>
-                    <a href="<?php echo get_category_link(get_cat_ID('特集')); ?>" class="table-col-50 sp-tab-menu-middle">
-                        <?php echo $link_sp_17; ?>
-                    </a>
-                </div>
-                <!-- mid -->
-
-                <!-- mid -->
-                <div class="table-inline sp-menu-middle">
-                    <a href="<?php echo get_category_link(get_cat_ID('マネー')); ?>" class="table-col-50 sp-tab-menu-middle">
-                    <?php echo $link_sp_14; ?>
                     </a>
                     <div class="table-col-50 sp-tab-menu-middle">
                     
@@ -826,7 +815,7 @@ class ASUPlus_Widget_Header extends WP_Widget {
             <div class="table-sp-menu">
 
                 <!-- COL -->
-                <a href="<?php echo get_category_link(get_cat_ID('スキルアップ')); ?>">
+                <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>">
                 <div class="tab-menu-col">
                     <div class="tab-menu-col-text"><?php echo $link_sp_11; ?></div>
                     <img src="<?php bloginfo('template_directory'); ?>/images/sp-menu-arrow1.png" alt="Images">
@@ -835,7 +824,7 @@ class ASUPlus_Widget_Header extends WP_Widget {
                 <!-- // COL -->
 
                 <!-- COL -->
-                <a href="<?php echo get_category_link(get_cat_ID('組織・チーム')); ?>">
+                <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>">
                 <div class="tab-menu-col">
                     <div class="tab-menu-col-text"><?php echo $link_sp_12; ?></div>
                     <img src="<?php bloginfo('template_directory'); ?>/images/sp-menu-arrow2.png" alt="Images" >
@@ -844,7 +833,7 @@ class ASUPlus_Widget_Header extends WP_Widget {
                 <!-- // COL -->
 
                 <!-- COL -->
-                <a href="<?php echo get_category_link(get_cat_ID('仕事研究会')); ?>">
+                <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>">
                 <div class="tab-menu-col">
                     <div class="tab-menu-col-text"><?php echo $link_sp_13; ?></div>
                     <img src="<?php bloginfo('template_directory'); ?>/images/sp-menu-arrow3.png" alt="Images">
@@ -853,7 +842,7 @@ class ASUPlus_Widget_Header extends WP_Widget {
                 <!-- // COL -->
 
                 <!-- COL -->
-                <a href="<?php echo get_category_link(get_cat_ID('マネー')); ?>">
+                <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>">
                 <div class="tab-menu-col">
                     <div class="tab-menu-col-text"><?php echo $link_sp_14; ?></div>
                     <img src="<?php bloginfo('template_directory'); ?>/images/sp-menu-arrow4.png" alt="Images" >
@@ -862,28 +851,10 @@ class ASUPlus_Widget_Header extends WP_Widget {
                 <!-- // COL -->
 
                 <!-- COL -->
-                <a href="<?php echo get_category_link(get_cat_ID('モチベーション')); ?>">
+                <a href="<?php echo get_category_link(get_category_by_slug( 'bao-dong' )->cat_ID); ?>">
                 <div class="tab-menu-col">
                     <div class="tab-menu-col-text"><?php echo $link_sp_15; ?></div>
                     <img src="<?php bloginfo('template_directory'); ?>/images/sp-menu-arrow5.png" alt="Images" >
-                </div>
-                </a>
-                <!-- // COL -->
-
-                <!-- COL -->
-                <a href="<?php echo get_category_link(get_cat_ID('センパイ')); ?>">
-                <div class="tab-menu-col">
-                    <div class="tab-menu-col-text"><?php echo $link_sp_16; ?></div>
-                    <img src="<?php bloginfo('template_directory'); ?>/images/sp-menu-arrow6.png" alt="Images" >
-                </div>
-                </a>
-                <!-- // COL -->
-
-                <!-- COL -->
-                <a href="<?php echo get_category_link(get_cat_ID('特集')); ?>">
-                <div class="tab-menu-col">
-                    <div class="tab-menu-col-text"><?php echo $link_sp_17; ?></div>
-                    <img src="<?php bloginfo('template_directory'); ?>/images/sp-menu-arrow7.png" alt="Images" >
                 </div>
                 </a>
                 <!-- // COL -->

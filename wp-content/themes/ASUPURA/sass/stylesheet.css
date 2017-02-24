@@ -378,11 +378,12 @@ main #main-content {
 }
 #asuplus-sidebar .login-sidebar #button-registry {
     background: url('../images/button-registry.png') no-repeat;
-   width: 90%;
+    width: 90%;
     max-width: 229px;
     height: 51px;
     margin-top: 9px;
     vertical-align: middle;
+    padding-bottom: 10px;
 }
 #asuplus-sidebar .login-sidebar .font-white-color {
     color: white;
