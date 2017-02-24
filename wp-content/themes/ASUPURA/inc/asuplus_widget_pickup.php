@@ -16,7 +16,7 @@ class ASUPlus_Widget_PickUp extends WP_Widget {
         $host_address = site_url();
         $default = array(
             'title' => 'PICK UP',
-            'title_2' => '編集部厳選ピックアップ'
+            'title_2' => 'Recommended'
         );
         $instance = wp_parse_args((array) $instance, $default);
         $title = esc_attr( $instance['title'] );

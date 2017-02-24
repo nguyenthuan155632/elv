@@ -67,7 +67,7 @@ class ASUPlus_Widget_Category extends WP_Widget {
 
         <div class="category-post box-page-pc">
             <div class="category-title">
-                <span id="category-text"><?php echo $title; ?></span><span id="category-text-2">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $curcate->name . 'の記事一覧'; ?></span>
+                <span id="category-text"><?php echo $title; ?></span><span id="category-text-2">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $curcate->name; ?></span>
             </div>
             <div class="category-content">
                 <ul style="height: <?php echo $format_posts_height;?>">

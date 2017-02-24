@@ -16,7 +16,7 @@ class ASUPlus_Widget_Ranking extends WP_Widget {
         $host_address = site_url();
         $default = array(
             'title' => 'RANKING',
-            'title_2' => '注目記事ランキング'
+            'title_2' => 'Popular'
         );
         $instance = wp_parse_args((array) $instance, $default);
         $title = esc_attr( $instance['title'] );

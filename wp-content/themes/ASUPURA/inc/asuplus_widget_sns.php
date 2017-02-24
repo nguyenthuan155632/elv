@@ -16,7 +16,7 @@ class ASUPlus_Widget_SNS extends WP_Widget {
         $host_address = site_url();
         $default = array(
             'title1' => 'CONTACT US!!',
-            'title2' => 'Contact to EL-VOL',
+            'title2' => 'Contact to EL-VOL Administrator',
             'facebook' => 'https://www.facebook.com/',
             // 'twitter' => 'https://twitter.com/',
             'google' => 'tienelv@gmail.com',

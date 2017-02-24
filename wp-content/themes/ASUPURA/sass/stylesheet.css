@@ -162,7 +162,8 @@ header #article-post-path span,
 header #writer-detail-path span,
 header #writer-list-path span,
 header #category-path span {
-    font-family: NotoSansCJKBold;
+    font-family: Tahoma;
+    font-weight: bold;
     font-size: 14px;
     color: #263238;
 }
@@ -197,6 +198,7 @@ footer #footer-sitemap {
     background: url(images/footer-top-bg.png);
 }
 footer #footer-asupura {
+    width: 300px;
     /*margin-top: 50px;
     margin-left: 100px;*/
     /*width: 50%;
@@ -481,7 +483,8 @@ main #main-content {
 }
 #asuplus-sidebar .sns-sidebar #note-follow {
     font-size: 14.36px;
-    font-family: Corporate Logo Bold, CorporateLogoBold;
+    font-family: Tahoma arial;
+    font-weight: bold;
     color: #263238;
 }
 #asuplus-sidebar .sns-sidebar ul {

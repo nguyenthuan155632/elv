@@ -152,7 +152,7 @@ if((isset($_POST['favor_submit']) || isset($_POST['favor_submit_sp']) || isset($
             	<?php the_title(); ?>
             </div>
             <div class="pc-get-nickname">
-            ライター：<?php
+            Writer：<?php
             $author_url =  get_author_posts_url(get_the_author_id());;
             ?><a href="<?php echo $author_url; ?>"><?php the_author(); ?></a>
             </div>

@@ -117,7 +117,7 @@ class ASUPlus_Widget_Footer extends WP_Widget {
             <!-- FOOTER BOTTOM -->
             <div class="sp-footer-bottom">
                 <div class="footer-bot-img">
-                    <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo_tecon.png" alt="Images"></a>
+                    <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo_footer.png" alt="Images"></a>
                 </div>
                 <div class="footer-bot-text">
                     Copyright ©
@@ -176,7 +176,7 @@ class ASUPlus_Widget_Footer extends WP_Widget {
         </div>
         <div id="footer-logo">
             <div class="footer-logo-img">
-                <div><a href="<?php echo site_url(); ?>"><img id="footer-asupura" src="<?php bloginfo('template_directory'); ?>/images/logo_tecon.png" /></a></div>
+                <div><a href="<?php echo site_url(); ?>"><img id="footer-asupura" src="<?php bloginfo('template_directory'); ?>/images/logo_footer.png" /></a></div>
                 <div class="footer-copyright-img"><img id="footer-copyright" src="<?php bloginfo('template_directory'); ?>/images/copyright.png" /></div>
             </div>
         </div>

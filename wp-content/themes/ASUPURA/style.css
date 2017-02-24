@@ -44,11 +44,13 @@ ul li .latest-list{
 }
 .category-post #category-text{
     font-size: 26px;
-    font-family: Roboto Thin Italic;
+    font-family: Tahoma;
+    font-weight: bold;
 }
 .category-post #category-text-2{
     font-size: 12px;
-    font-family: NotoSansCJKBold;
+    font-family: Tahoma;
+    font-weight: bold;
 }
 .category-post ul {
     height: 770px;

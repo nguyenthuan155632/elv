@@ -602,7 +602,7 @@ class ASUPlus_Widget_Header extends WP_Widget {
         elseif(is_category()) {
             $curcate = $wp_query->get_queried_object();
             ?>
-            <div id="category-path"><a href="<?php echo site_url(); ?>"><?php echo $toplink; ?>　＞</a>　<span><?php echo $curcate->name; ?>の記事一覧</span></div>
+            <div id="category-path"><a href="<?php echo site_url(); ?>"><?php echo $toplink; ?>　＞</a>　<span><?php echo $curcate->name; ?></span></div>
             <?php
         }
         elseif(is_page('author')) {
