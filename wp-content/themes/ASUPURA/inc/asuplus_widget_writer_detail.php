@@ -226,26 +226,20 @@ class ASUPlus_Widget_Writer_Detail extends WP_Widget {
                                     mb_internal_encoding("UTF-8");
                                         $category = get_the_category();
                                         $color = '';
-                                        if($category[0]->name == "スキルアップ") {
+                                        if($category[0]->name == "Báo động - Báo cháy") {
                                             $color = '#9b26af';
                                         }
-                                        elseif($category[0]->name == "組織・チーム") {
+                                        elseif($category[0]->name == "Camera quan sát") {
                                             $color = '#673ab6';
                                         }
-                                        elseif($category[0]->name == "仕事研究会") {
+                                        elseif($category[0]->name == "Cơ điện") {
                                             $color = '#3f51b4';
                                         }
-                                        elseif($category[0]->name == "マネー") {
+                                        elseif($category[0]->name == "Mạng - Tổng đài") {
                                             $color = '#01bbd3';
                                         }
-                                        elseif($category[0]->name == "モチベーション") {
+                                        elseif($category[0]->name == "Thiết bị tin học") {
                                             $color = '#009487';
-                                        }
-                                        elseif($category[0]->name == "センパイ") {
-                                            $color = '#f34336';
-                                        }
-                                        elseif($category[0]->name == "特集") {
-                                            $color = '#e81d63';
                                         }
                                         ?>
                                         <?php $pr = get_post_meta( get_the_ID(), '_pr_mark', true ); ?>
@@ -467,27 +461,22 @@ function click_button()
                         ?>
             			<?php 
                         $color = '';
-                        if($category[0]->name == "スキルアップ") {
+                        if($category[0]->name == "Báo động - Báo cháy") {
                             $color = '#9b26af';
                         }
-                        elseif($category[0]->name == "組織・チーム") {
+                        elseif($category[0]->name == "Camera quan sát") {
                             $color = '#673ab6';
                         }
-                        elseif($category[0]->name == "仕事研究会") {
+                        elseif($category[0]->name == "Cơ điện") {
                             $color = '#3f51b4';
                         }
-                        elseif($category[0]->name == "マネー") {
+                        elseif($category[0]->name == "Mạng - Tổng đài") {
                             $color = '#01bbd3';
-                        } 
-                        elseif($category[0]->name == "モチベーション") {
+                        }
+                        elseif($category[0]->name == "Thiết bị tin học") {
                             $color = '#009487';
                         }
-                        elseif($category[0]->name == "センパイ") {
-                            $color = '#f34336';
-                        }
-                        elseif($category[0]->name == "特集") {
-                            $color = '#e81d63';
-                        } else {
+                        else {
                             $color = '#000';
                         }
                         ?>

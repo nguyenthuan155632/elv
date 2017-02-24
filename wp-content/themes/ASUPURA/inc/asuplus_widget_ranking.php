@@ -95,26 +95,20 @@ class ASUPlus_Widget_Ranking extends WP_Widget {
                             </div>
                             <?php 
                             $color = '';
-                            if($category[0]->name == "スキルアップ") {
+                            if($category[0]->name == "Báo động - Báo cháy") {
                                 $color = '#9b26af';
                             }
-                            elseif($category[0]->name == "組織・チーム") {
+                            elseif($category[0]->name == "Camera quan sát") {
                                 $color = '#673ab6';
                             }
-                            elseif($category[0]->name == "仕事研究会") {
+                            elseif($category[0]->name == "Cơ điện") {
                                 $color = '#3f51b4';
                             }
-                            elseif($category[0]->name == "マネー") {
+                            elseif($category[0]->name == "Mạng - Tổng đài") {
                                 $color = '#01bbd3';
                             }
-                            elseif($category[0]->name == "モチベーション") {
+                            elseif($category[0]->name == "Thiết bị tin học") {
                                 $color = '#009487';
-                            }
-                            elseif($category[0]->name == "センパイ") {
-                                $color = '#f34336';
-                            }
-                            elseif($category[0]->name == "特集") {
-                                $color = '#e81d63';
                             }
                             ?>
                             <div class="ranking-detail">
